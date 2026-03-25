@@ -1,0 +1,10 @@
+{
+  "buildCommand": "echo 'static site'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {"source": "/day-:num", "destination": "/day-:num.html"},
+    {"source": "/", "destination": "/index.html"}
+  ]
+}
