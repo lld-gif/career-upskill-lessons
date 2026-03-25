@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 — Clearance-Leveraged BD | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 71.4%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 10</span>
+      <h1>Clearance-Leveraged BD</h1>
+      <p class="subtitle">Business development in classified environments and cleared workforce dynamics.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Understand the security clearance hierarchy and its business implications</li>
+        <li>Leverage cleared access as a competitive moat</li>
+        <li>Navigate the Facility Clearance (FCL) process</li>
+        <li>Build BD strategy around classified programs and cleared talent</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>The Clearance Landscape</h2>
+
+      <h3>Clearance Levels</h3>
+      <table>
+        <thead>
+          <tr><th>Level</th><th>Access</th><th>Investigation</th><th>Timeline</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Confidential</td><td>Information that could cause damage</td><td>NACLC / T3</td><td>2–6 months</td></tr>
+          <tr><td>Secret</td><td>Information that could cause serious damage</td><td>T3 investigation</td><td>3–9 months</td></tr>
+          <tr><td>Top Secret</td><td>Information that could cause exceptionally grave damage</td><td>T5 (SSBI)</td><td>6–18 months</td></tr>
+          <tr><td>TS/SCI</td><td>Top Secret + Sensitive Compartmented Information</td><td>T5 + polygraph (for some)</td><td>9–24 months</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Why Clearances Create Business Moats</h3>
+      <p>Security clearances are one of the strongest competitive advantages in defense technology. They create barriers that compound over time:</p>
+      <ul>
+        <li><strong>Time barrier:</strong> New entrants need 6–24 months to clear employees before they can even start work on classified programs</li>
+        <li><strong>Talent scarcity:</strong> Roughly 3 million Americans hold active clearances — a small pool for a massive market</li>
+        <li><strong>Facility requirements:</strong> Cleared work requires SCIFs and accredited facilities — significant capital investment</li>
+        <li><strong>Incumbency advantage:</strong> Once you're on a classified program, switching costs are enormous for the customer</li>
+        <li><strong>Knowledge asymmetry:</strong> Cleared teams understand classified requirements that uncleared competitors can't even see</li>
+      </ul>
+
+      <div class="callout">
+        <strong>The clearance paradox:</strong> You need a contract to sponsor clearances, but you need cleared people to win contracts. Breaking into classified work requires strategic investment in either acquiring cleared talent or winning initial unclassified contracts that create a path to classified follow-ons.
+      </div>
+    </section>
+
+    <section>
+      <h2>Facility Clearance (FCL)</h2>
+      <p>Before your company can perform classified work, you need a <span class="key-term">Facility Clearance</span> from DCSA (Defense Counterintelligence and Security Agency).</p>
+
+      <h3>FCL Requirements</h3>
+      <ul>
+        <li><strong>Sponsorship:</strong> A government agency or cleared prime must sponsor your FCL application</li>
+        <li><strong>FOCI mitigation:</strong> Foreign Ownership, Control, or Influence must be mitigated (boards, proxy agreements, SSAs). This is a major issue for venture-backed companies with foreign LP investors.</li>
+        <li><strong>Key management personnel:</strong> FSO (Facility Security Officer), ITPSO, and cleared senior leadership</li>
+        <li><strong>Physical security:</strong> Accredited space for storing/processing classified information (SCIF for TS/SCI)</li>
+        <li><strong>NISPOM compliance:</strong> National Industrial Security Program Operating Manual — the rulebook for cleared contractors</li>
+      </ul>
+
+      <h3>FOCI and Venture Capital</h3>
+      <p>Foreign investors in your cap table can block or complicate FCL. Common mitigations:</p>
+      <table>
+        <thead>
+          <tr><th>Mitigation</th><th>Level of Control</th><th>Use Case</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Board resolution</td><td>Minimal (foreign minority investor)</td><td>Foreign LP owns &lt;5%, no board seat</td></tr>
+          <tr><td>Security Control Agreement (SCA)</td><td>Moderate</td><td>Foreign investor with some influence</td></tr>
+          <tr><td>Special Security Agreement (SSA)</td><td>Significant</td><td>Foreign parent company or major investor</td></tr>
+          <tr><td>Proxy agreement</td><td>Maximum</td><td>Complete insulation from foreign control</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>BD Strategy for Classified Programs</h2>
+
+      <h3>The Pipeline Funnel</h3>
+      <ol>
+        <li><strong>Identify programs:</strong> SAM.gov, GovWin, Bloomberg Government, FedBizOpps — find upcoming solicitations aligned with your capabilities</li>
+        <li><strong>Shape the requirement:</strong> Engage with program offices 12–18 months before RFP. Offer white papers, demos, and capability briefings. The goal is to influence the requirements so they align with your strengths.</li>
+        <li><strong>Build the team:</strong> Most classified programs require teaming arrangements. Identify primes who need your technology and subcontract through them initially.</li>
+        <li><strong>Win the contract:</strong> Technical excellence, past performance, and price. In classified programs, cleared workforce availability and facility readiness are evaluated separately.</li>
+        <li><strong>Expand the footprint:</strong> Win the first task order, deliver excellently, then expand into adjacent programs. Incumbency and cleared access compound.</li>
+      </ol>
+
+      <h3>Cleared Talent Strategy</h3>
+      <ul>
+        <li><strong>Recruit from government:</strong> Retiring military officers, departing intelligence analysts, and government civilians bring clearances and relationships</li>
+        <li><strong>Recruit from other contractors:</strong> Cleared engineers and analysts who want to work on more innovative programs (talent magnet strategy)</li>
+        <li><strong>Cross-clear existing staff:</strong> Sponsor new clearances for your best commercial engineers to work on classified programs</li>
+        <li><strong>Retention premium:</strong> Cleared professionals command 10–25% salary premiums. Budget for it.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>The golden handcuffs:</strong> Cleared talent knows their clearance has market value. Retention requires more than salary — meaningful work, career growth, and modern engineering practices matter. The best defense tech companies attract cleared talent by offering the mission impact of government with the culture and tools of Silicon Valley.
+      </div>
+    </section>
+
+    <section>
+      <h2>Classified Program Business Models</h2>
+
+      <h3>Subcontracting (Entry Strategy)</h3>
+      <ul>
+        <li>Partner with a prime who has the contract vehicle and cleared facility</li>
+        <li>Provide specialized technology or cleared talent</li>
+        <li>Lower risk but lower margin (prime takes 10–20% fee on your work)</li>
+        <li>Use this to build past performance for future prime contracts</li>
+      </ul>
+
+      <h3>Prime Contracting (Growth Strategy)</h3>
+      <ul>
+        <li>Win contracts directly with the government</li>
+        <li>Higher margin but requires FCL, cleared workforce, and past performance</li>
+        <li>Start with smaller contracts (SBIR Phase III, OTA prototypes) and scale up</li>
+      </ul>
+
+      <h3>Hybrid / Commercial + Classified</h3>
+      <ul>
+        <li>Build commercial product on unclassified side</li>
+        <li>Deploy hardened/compliant version for classified environments</li>
+        <li>Commercial innovation funds classified customization</li>
+        <li>This is the Palantir/Anduril model — and increasingly the winning playbook</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Relationship Building in Defense</h2>
+      <p>Defense BD is relationship-heavy and long-cycle. Key venues and tactics:</p>
+      <ul>
+        <li><strong>Conferences:</strong> AUSA, Sea-Air-Space, SOFIC, DoDIIS, Classified briefings at cleared events</li>
+        <li><strong>Industry days:</strong> Government programs host industry days before solicitations — attend them all</li>
+        <li><strong>Congressional engagement:</strong> Appropriations committees fund programs. Know which members champion your technology area.</li>
+        <li><strong>Retired general officers:</strong> Advisory boards with retired flag officers provide access and credibility (but be thoughtful about optics)</li>
+        <li><strong>Program office engagement:</strong> Build relationships with program managers, contracting officers, and requirements officers. These are the people who write the RFPs.</li>
+      </ul>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're a commercial AI company with no clearances. A DoD program office wants to use your product for a classified mission. What are your options?</li>
+        <li>Explain why a TS/SCI-cleared ML engineer can command a $50K+ salary premium over an identical uncleared engineer.</li>
+        <li>Your company has two foreign LP investors owning 8% combined. How does this affect your ability to get a facility clearance? What mitigations would you pursue?</li>
+        <li>Compare the sub-to-prime progression strategy vs. starting as a prime contractor. When is each appropriate?</li>
+        <li>A defense startup says "We'll just hire cleared people when we win a contract." Why is this naive? What should they do instead?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-09.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-11.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 04 — M&A Process | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 28.56%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 04</span>
+      <h1>M&A Process</h1>
+      <p class="subtitle">End-to-end mergers and acquisitions workflow from sourcing to close.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Map the full M&A lifecycle from strategy through integration</li>
+        <li>Understand the roles of advisors, principals, and legal counsel</li>
+        <li>Identify key decision points and common deal-breakers</li>
+        <li>Recognize the differences between strategic and financial acquirers</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Why Companies Acquire</h2>
+      <p>Acquisitions serve different strategic purposes, and the motivation shapes every aspect of the deal:</p>
+
+      <h3>Strategic Rationales</h3>
+      <table>
+        <thead>
+          <tr><th>Rationale</th><th>What the Buyer Wants</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Acqui-hire</td><td>Team and talent</td><td>Big tech acquiring AI research teams</td></tr>
+          <tr><td>Technology</td><td>IP, product, or platform</td><td>Cloud provider buying a database company</td></tr>
+          <tr><td>Market access</td><td>Customers, distribution, geography</td><td>US company buying a European competitor</td></tr>
+          <tr><td>Revenue scale</td><td>ARR growth, market share</td><td>PE roll-up strategy in fragmented markets</td></tr>
+          <tr><td>Vertical integration</td><td>Control of supply chain</td><td>SaaS company acquiring data provider</td></tr>
+          <tr><td>Defensive</td><td>Eliminate competitor or threat</td><td>Incumbent acquiring disruptive startup</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Key distinction:</strong> Strategic buyers (operating companies) pay for synergies — they can justify higher multiples because they'll integrate the asset. Financial buyers (PE/VC) pay for standalone value and financial engineering. This distinction drives valuation.
+      </div>
+    </section>
+
+    <section>
+      <h2>The M&A Lifecycle</h2>
+
+      <h3>Phase 1: Strategy & Sourcing (Months 1–3)</h3>
+      <p>Before any deal, the acquirer defines what they're looking for:</p>
+      <ul>
+        <li><strong>Acquisition thesis:</strong> What capability gap or strategic objective does M&A solve?</li>
+        <li><strong>Target criteria:</strong> Size (revenue, team), geography, technology fit, cultural alignment</li>
+        <li><strong>Target identification:</strong> Proprietary research, banker introductions, conference networking, inbound from sellers</li>
+        <li><strong>Initial outreach:</strong> Warm introductions are far more effective than cold approaches</li>
+      </ul>
+
+      <h3>Phase 2: Preliminary Evaluation (Weeks 2–6)</h3>
+      <ul>
+        <li><strong>NDA execution:</strong> Both parties sign before sharing confidential information</li>
+        <li><strong>CIM review:</strong> The Confidential Information Memorandum — the seller's pitch deck for the business</li>
+        <li><strong>Management meeting:</strong> Initial face-to-face with target's leadership team</li>
+        <li><strong>Preliminary valuation:</strong> Rough range based on public data, CIM, and comparable transactions</li>
+      </ul>
+
+      <h3>Phase 3: Letter of Intent (Weeks 4–8)</h3>
+      <p>The <span class="key-term">LOI</span> (or Term Sheet) is the first binding signal of intent. It typically includes:</p>
+      <ul>
+        <li>Purchase price or valuation range</li>
+        <li>Deal structure (cash, stock, or mix)</li>
+        <li>Key terms (earnouts, escrow, reps & warranties)</li>
+        <li>Exclusivity period (typically 45–90 days — blocks the seller from shopping the deal)</li>
+        <li>Due diligence scope and timeline</li>
+        <li>Conditions to close (regulatory, financing, board approval)</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Critical point:</strong> The LOI is mostly non-binding except for exclusivity and confidentiality. But it sets the anchor for all subsequent negotiations. Getting the LOI terms right is arguably the most important negotiation moment.
+      </div>
+
+      <h3>Phase 4: Due Diligence (Weeks 6–16)</h3>
+      <p>The deep investigation phase. Due diligence streams run in parallel:</p>
+      <table>
+        <thead>
+          <tr><th>Stream</th><th>Focus Areas</th><th>Led By</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Financial</td><td>Revenue quality, COGS, margins, working capital, projections</td><td>Finance team + accountants</td></tr>
+          <tr><td>Legal</td><td>Contracts, IP ownership, litigation, compliance</td><td>Legal counsel</td></tr>
+          <tr><td>Technical</td><td>Architecture, tech debt, security, scalability</td><td>Engineering leadership</td></tr>
+          <tr><td>Commercial</td><td>Customer concentration, churn, pipeline, market position</td><td>Sales/BD team</td></tr>
+          <tr><td>People</td><td>Key person risk, comp structures, culture, retention</td><td>HR + leadership</td></tr>
+          <tr><td>Tax</td><td>Structure optimization, liabilities, credits</td><td>Tax advisors</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Phase 5: Definitive Agreement & Close (Weeks 12–20)</h3>
+      <ul>
+        <li><strong>Purchase agreement:</strong> The binding legal document (50–200+ pages for larger deals)</li>
+        <li><strong>Reps & warranties:</strong> Seller's guarantees about the state of the business</li>
+        <li><strong>Indemnification:</strong> Seller's liability for breaches of reps</li>
+        <li><strong>Escrow:</strong> Portion of purchase price held back (typically 10–15%) to cover post-close claims</li>
+        <li><strong>Regulatory approval:</strong> HSR/antitrust clearance for deals above $119.5M (2024 threshold)</li>
+        <li><strong>Simultaneous sign and close</strong> vs. <strong>deferred close</strong> depending on regulatory requirements</li>
+      </ul>
+
+      <h3>Phase 6: Integration (Months 1–18 Post-Close)</h3>
+      <p>Where most deal value is won or lost. We'll cover this in depth on Day 14.</p>
+    </section>
+
+    <section>
+      <h2>Key Players</h2>
+      <table>
+        <thead>
+          <tr><th>Role</th><th>Buyer Side</th><th>Seller Side</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Decision maker</td><td>CEO / Board</td><td>CEO / Board / Shareholders</td></tr>
+          <tr><td>Deal lead</td><td>Corp Dev / M&A team</td><td>CEO or CFO (smaller cos)</td></tr>
+          <tr><td>Investment banker</td><td>Buy-side advisor (optional)</td><td>Sell-side advisor (common)</td></tr>
+          <tr><td>Legal counsel</td><td>M&A attorneys</td><td>M&A attorneys</td></tr>
+          <tr><td>Accountants</td><td>Quality of earnings provider</td><td>Financial advisor</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Common Deal Breakers</h2>
+      <ul>
+        <li><strong>Customer concentration:</strong> >30% of revenue from one customer raises red flags</li>
+        <li><strong>Key person risk:</strong> Business depends on 1–2 people with no succession plan</li>
+        <li><strong>Revenue quality:</strong> One-time revenue disguised as recurring; aggressive recognition</li>
+        <li><strong>IP issues:</strong> Unclear ownership, missing assignments, open-source license contamination</li>
+        <li><strong>Hidden liabilities:</strong> Undisclosed litigation, tax exposure, contract penalties</li>
+        <li><strong>Cultural mismatch:</strong> Often cited as the #1 reason acquisitions fail to deliver value</li>
+      </ul>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're advising a SaaS startup being approached by a strategic acquirer. What are the top 3 things the founder should do before engaging?</li>
+        <li>Explain why exclusivity periods matter and how length favors the buyer vs. seller.</li>
+        <li>A target company has 45% of revenue from one customer. How would you handle this in diligence?</li>
+        <li>What's the difference between a strategic acquirer paying 8x ARR and a PE firm paying 5x ARR? What drives the gap?</li>
+        <li>Why do most M&A deals fail to deliver expected value? What can be done at the diligence stage to mitigate this?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-03.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-05.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

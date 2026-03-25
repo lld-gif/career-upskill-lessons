@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 11 — VC/PE Portfolio Operations | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 78.54%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 11</span>
+      <h1>VC/PE Portfolio Operations</h1>
+      <p class="subtitle">Value creation playbooks, operating cadences, and portfolio support models.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Compare VC and PE value creation approaches</li>
+        <li>Design a portfolio support operating model</li>
+        <li>Understand the 100-day plan for post-investment value creation</li>
+        <li>Measure portfolio operations ROI</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>VC vs. PE Portfolio Operations</h2>
+      <p>Both VC and PE firms invest in companies and work to increase their value, but the approach differs fundamentally:</p>
+
+      <table>
+        <thead>
+          <tr><th>Dimension</th><th>Venture Capital</th><th>Private Equity</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ownership</td><td>Minority (10–30%)</td><td>Majority/control (51–100%)</td></tr>
+          <tr><td>Board involvement</td><td>Board seat, advisory</td><td>Board control, active governance</td></tr>
+          <tr><td>Value creation lever</td><td>Growth: revenue, product-market fit</td><td>Efficiency: margins, operations, M&A</td></tr>
+          <tr><td>Operational involvement</td><td>Light-touch, network-driven</td><td>Hands-on, deploy operators</td></tr>
+          <tr><td>Time horizon</td><td>7–10 years (fund life)</td><td>3–7 years (faster turns)</td></tr>
+          <tr><td>Portfolio size</td><td>20–40 companies per fund</td><td>5–15 companies per fund</td></tr>
+          <tr><td>Support model</td><td>Platform team, network, events</td><td>Operating partners, interim execs</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>VC Platform Model</h2>
+      <p>Modern VC firms build <span class="key-term">platform teams</span> to support portfolio companies at scale. This is increasingly a competitive differentiator in winning deals.</p>
+
+      <h3>Platform Team Functions</h3>
+      <table>
+        <thead>
+          <tr><th>Function</th><th>Services Provided</th><th>Impact</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Talent</td><td>Executive recruiting, comp benchmarking, org design</td><td>Faster hiring, better leadership matches</td></tr>
+          <tr><td>GTM</td><td>Sales playbook, marketing strategy, customer intros</td><td>Accelerated revenue growth</td></tr>
+          <tr><td>Technical</td><td>Architecture review, security audit, infrastructure</td><td>Reduced tech debt, better scalability</td></tr>
+          <tr><td>Finance</td><td>FP&A support, fundraising prep, CFO network</td><td>Better metrics discipline, easier next round</td></tr>
+          <tr><td>Network</td><td>Customer intros, partnership facilitation, co-portfolio connections</td><td>Revenue acceleration, strategic deals</td></tr>
+          <tr><td>Community</td><td>Founder summits, cohort programs, peer groups</td><td>Knowledge sharing, reduced isolation</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scaling the Platform</h3>
+      <p>The fundamental challenge: platform teams must serve 20–40 portfolio companies with limited resources. Effective models use a tiered approach:</p>
+      <ul>
+        <li><strong>Self-serve:</strong> Knowledge base, templates, playbooks, vendor lists — available to all portfolio companies</li>
+        <li><strong>Group programs:</strong> Cohort-based workshops, peer groups, office hours — efficient use of platform team time</li>
+        <li><strong>1:1 engagement:</strong> Deep support for highest-priority companies (typically post-Series A/B or in crisis)</li>
+        <li><strong>Expert network:</strong> Curated list of fractional executives, consultants, and advisors for on-demand expertise</li>
+      </ul>
+
+      <div class="callout">
+        <strong>The platform paradox:</strong> Founders say they want hands-on support, but the best portfolio support is often a warm introduction made at the right moment, not a 50-page playbook. The highest-ROI platform activities are usually network access and pattern matching from having seen hundreds of companies.
+      </div>
+    </section>
+
+    <section>
+      <h2>PE Value Creation Playbook</h2>
+
+      <h3>The 100-Day Plan</h3>
+      <p>PE firms typically execute a structured value creation plan in the first 100 days post-acquisition:</p>
+      <ol>
+        <li><strong>Days 1–30: Assess</strong>
+          <ul>
+            <li>Deep operational diligence (beyond what was done pre-close)</li>
+            <li>Management team assessment — who stays, who's upgraded</li>
+            <li>Quick financial wins identification (pricing, vendor renegotiation, headcount optimization)</li>
+            <li>Customer and product deep dive</li>
+          </ul>
+        </li>
+        <li><strong>Days 30–60: Plan</strong>
+          <ul>
+            <li>3-year value creation plan with specific initiatives, owners, and milestones</li>
+            <li>KPI dashboard design and implementation</li>
+            <li>Board cadence and governance structure</li>
+            <li>Management incentive plan aligned with value creation targets</li>
+          </ul>
+        </li>
+        <li><strong>Days 60–100: Execute</strong>
+          <ul>
+            <li>Launch top 3–5 value creation initiatives</li>
+            <li>Install any new leadership hires</li>
+            <li>Begin M&A pipeline development (for add-on acquisitions)</li>
+            <li>Establish monthly operating rhythm</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>PE Value Creation Levers</h3>
+      <table>
+        <thead>
+          <tr><th>Lever</th><th>Tactics</th><th>Typical Impact</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Revenue growth</td><td>Pricing optimization, new markets, product expansion</td><td>10–30% revenue uplift</td></tr>
+          <tr><td>Margin expansion</td><td>Cost reduction, vendor consolidation, headcount efficiency</td><td>5–15 points of EBITDA</td></tr>
+          <tr><td>Add-on M&A</td><td>Acquire complementary companies at lower multiples</td><td>Multiple arbitrage + synergies</td></tr>
+          <tr><td>Management upgrade</td><td>Bring in experienced executives for key roles</td><td>Execution acceleration</td></tr>
+          <tr><td>Financial engineering</td><td>Optimize capital structure, debt paydown, dividend recaps</td><td>Enhanced equity returns</td></tr>
+          <tr><td>Multiple expansion</td><td>Improve growth profile, reduce risk, build recurring revenue</td><td>2–4x multiple uplift at exit</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Operating Partners & EIRs</h2>
+
+      <h3>Operating Partner Model</h3>
+      <p>PE and growth-stage VC firms hire <span class="key-term">operating partners</span> — experienced operators who work directly with portfolio companies:</p>
+      <ul>
+        <li><strong>Full-time operating partners:</strong> On the firm's payroll, work across 3–5 portfolio companies simultaneously</li>
+        <li><strong>Senior advisors:</strong> Part-time, compensated with carry and fees, typically retired C-suite executives</li>
+        <li><strong>Interim executives:</strong> Placed temporarily into portfolio company leadership roles (interim CRO, CFO, etc.)</li>
+      </ul>
+
+      <h3>Entrepreneur-in-Residence (EIR)</h3>
+      <p>A role at the intersection of investing and operating:</p>
+      <ul>
+        <li>Typically experienced founders/operators between ventures</li>
+        <li>Help evaluate deals, support portfolio companies, and develop investment theses</li>
+        <li>Often expected to launch or lead a portfolio company within 12–18 months</li>
+        <li>Compensated with salary + potential equity in future ventures</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Portfolio Monitoring & Governance</h2>
+
+      <h3>Monthly Operating Cadence</h3>
+      <ul>
+        <li><strong>Monthly reporting:</strong> Revenue, burn rate, runway, key metrics dashboard</li>
+        <li><strong>Quarterly board meetings:</strong> Strategic review, financial performance, key decisions</li>
+        <li><strong>Annual planning:</strong> Budget, hiring plan, strategic priorities, OKRs</li>
+        <li><strong>Ad hoc:</strong> Fundraising support, crisis management, M&A opportunities</li>
+      </ul>
+
+      <h3>Key Metrics by Stage</h3>
+      <table>
+        <thead>
+          <tr><th>Stage</th><th>Primary Metrics</th><th>Board Focus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Seed / Series A</td><td>Engagement, retention, PMF signals, burn rate</td><td>Product direction, team building</td></tr>
+          <tr><td>Series B</td><td>ARR growth, unit economics, sales efficiency</td><td>GTM scaling, hiring plan</td></tr>
+          <tr><td>Series C+</td><td>Rule of 40, NRR, magic number, FCF</td><td>Path to profitability, market expansion</td></tr>
+          <tr><td>PE portfolio</td><td>EBITDA, cash conversion, debt paydown</td><td>Value creation plan execution</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>The Rule of 40:</strong> Revenue growth rate + profit margin should exceed 40%. A company growing 60% with -15% margins scores 45 (good). A company growing 20% with 25% margins scores 45 (also good). This metric balances growth and efficiency and is the standard for evaluating late-stage SaaS and PE-owned software companies.
+      </div>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're building a VC platform team from scratch. You have budget for 3 hires. Which roles do you fill first and why?</li>
+        <li>A PE firm acquires a $50M ARR SaaS company with 55% gross margins and 5% EBITDA margins. Design a 100-day value creation plan targeting 20% EBITDA within 18 months.</li>
+        <li>Compare how a VC firm and PE firm would each approach a portfolio company that's growing 15% but burning cash. Different advice — why?</li>
+        <li>What's the difference between an operating partner and a board member? When would you deploy each for a struggling portfolio company?</li>
+        <li>A portfolio company founder says "Your platform team's advice isn't relevant to our market." How do you handle this and still add value?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-10.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-12.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

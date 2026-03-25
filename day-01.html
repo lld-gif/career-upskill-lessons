@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01 — Cloud Economics | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 7.14%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    nav.lesson-nav .disabled { color: #555; pointer-events: none; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    code { font-family: 'Space Mono', monospace; background: #1a1a1a; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.85rem; color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 01</span>
+      <h1>Cloud Economics</h1>
+      <p class="subtitle">Unit economics of cloud infrastructure, consumption models, and margin architecture.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Understand the fundamental unit economics of cloud infrastructure</li>
+        <li>Compare consumption-based vs. committed-use pricing models</li>
+        <li>Analyze how hyperscalers build and sustain gross margins</li>
+        <li>Map the cost stack from silicon to SaaS</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>The Cloud Cost Stack</h2>
+      <p>Cloud economics starts with understanding the full cost stack. Every dollar a customer pays for cloud services passes through multiple layers, each taking a margin cut.</p>
+
+      <h3>Layer Breakdown</h3>
+      <table>
+        <thead>
+          <tr><th>Layer</th><th>Examples</th><th>Typical Margin</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Silicon / Hardware</td><td>CPUs, GPUs, custom ASICs, networking gear</td><td>40–60%</td></tr>
+          <tr><td>Data Center Ops</td><td>Power, cooling, physical security, land</td><td>Cost center</td></tr>
+          <tr><td>Infrastructure Services</td><td>Compute (EC2), Storage (S3), Networking</td><td>50–65%</td></tr>
+          <tr><td>Platform Services</td><td>Databases, ML services, analytics</td><td>60–75%</td></tr>
+          <tr><td>Application Layer (SaaS)</td><td>End-user software built on cloud</td><td>70–85%</td></tr>
+        </tbody>
+      </table>
+      <p>The higher you go in the stack, the more gross margin expands — but so does competition and customer acquisition cost.</p>
+
+      <h3>CapEx vs. OpEx Shift</h3>
+      <p>The fundamental promise of cloud is converting <span class="key-term">capital expenditure</span> (buying servers) into <span class="key-term">operating expenditure</span> (renting capacity). This matters because:</p>
+      <ul>
+        <li>OpEx is tax-deductible immediately; CapEx depreciates over 3–5 years</li>
+        <li>OpEx scales with revenue, improving cash flow timing</li>
+        <li>CFOs prefer predictable monthly spend over lumpy capital requests</li>
+        <li>Engineering teams get capacity in minutes instead of months</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Consumption vs. Committed Pricing</h2>
+      <p>Every major cloud provider offers two fundamental pricing models, and understanding the tension between them is essential.</p>
+
+      <h3>On-Demand (Consumption)</h3>
+      <p>Pay for what you use, by the second or hour. No commitment required. This is the default and most expensive option.</p>
+      <ul>
+        <li>Best for: unpredictable workloads, dev/test, spiky traffic</li>
+        <li>Downside: 3–5x more expensive than committed pricing for steady-state workloads</li>
+      </ul>
+
+      <h3>Reserved / Committed Use</h3>
+      <p>Commit to 1 or 3 years of usage in exchange for 30–72% discounts. The cloud provider gets revenue predictability; you get lower unit costs.</p>
+      <ul>
+        <li>Best for: production workloads, databases, baseline compute</li>
+        <li>Downside: stranded capacity if you over-commit; requires forecasting discipline</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Key insight:</strong> The spread between on-demand and reserved pricing is where cloud providers manage earnings. High on-demand prices subsidize the discount offered on commitments, and commitments give Wall Street the recurring revenue narrative.
+      </div>
+
+      <h3>Savings Plans & Flex Commitments</h3>
+      <p>AWS Savings Plans and GCP CUDs represent a middle ground — you commit to a dollar amount of spend per hour rather than specific instance types. This gives flexibility to change workloads while still capturing discounts.</p>
+    </section>
+
+    <section>
+      <h2>Hyperscaler Margin Architecture</h2>
+      <p>Understanding how AWS, Azure, and GCP make money helps you negotiate better and architect more cost-effectively.</p>
+
+      <h3>Revenue Mix</h3>
+      <p>Compute (virtual machines) is the largest revenue driver, but storage and networking are the highest-margin services. Data egress charges — fees for moving data out of the cloud — are particularly profitable and create significant lock-in.</p>
+
+      <h3>The Flywheel</h3>
+      <ol>
+        <li>Scale drives down unit costs (bulk hardware purchasing, efficient data centers)</li>
+        <li>Lower costs enable lower prices or higher margins</li>
+        <li>Lower prices attract more customers</li>
+        <li>More customers drive more scale</li>
+        <li>More data in the cloud increases switching costs</li>
+      </ol>
+      <p>This flywheel is why cloud is a natural oligopoly — the economics strongly favor the top 3 providers.</p>
+
+      <h3>Margin Benchmarks</h3>
+      <table>
+        <thead>
+          <tr><th>Provider</th><th>Est. Operating Margin</th><th>Key Differentiator</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AWS</td><td>~30%</td><td>Breadth of services, enterprise penetration</td></tr>
+          <tr><td>Azure</td><td>~25%</td><td>Enterprise bundling with M365, hybrid play</td></tr>
+          <tr><td>GCP</td><td>~5–10%</td><td>Data/AI leadership, competitive pricing</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Unit Economics That Matter</h2>
+
+      <h3>Cost Per vCPU-Hour</h3>
+      <p>The most fundamental unit in cloud economics. Track this across instance families and over time — it trends down ~10–15% annually as hardware improves and providers compete.</p>
+
+      <h3>Cost Per GB Stored</h3>
+      <p>Storage is cheap and getting cheaper, but the real cost is in IOPS (input/output operations per second) and data retrieval. Archival storage (like S3 Glacier) can be 90% cheaper than hot storage, but retrieval takes hours.</p>
+
+      <h3>Data Transfer Costs</h3>
+      <p>Often the hidden surprise in cloud bills. Ingress is free (they want your data in), but egress is expensive (they want to keep it there). Multi-cloud and hybrid architectures amplify these costs.</p>
+
+      <div class="callout">
+        <strong>Rule of thumb:</strong> For a typical SaaS application, expect compute to be 50–60% of cloud spend, storage 15–20%, data transfer 10–15%, and managed services (databases, queues, etc.) 10–20%.
+      </div>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>Why do platform services (databases, ML) carry higher gross margins than raw compute?</li>
+        <li>A company runs steady-state workloads 24/7. They're on 100% on-demand pricing. What's your recommendation and what's the expected savings range?</li>
+        <li>Explain why data egress charges create cloud lock-in. How would you factor this into a multi-cloud architecture decision?</li>
+        <li>If AWS's operating margin is ~30% and GCP's is ~5–10%, what does that imply about their competitive strategies?</li>
+        <li>A CFO asks: "Why is our cloud bill going up faster than our revenue?" List three likely causes.</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <span class="disabled">← Previous</span>
+      <a href="index.html">Index</a>
+      <a href="day-02.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

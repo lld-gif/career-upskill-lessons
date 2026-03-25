@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 08 — Channel Partnerships | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 57.12%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 08</span>
+      <h1>Channel Partnerships</h1>
+      <p class="subtitle">Partner ecosystems, co-sell motions, and channel economics.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Distinguish between partnership models and their economics</li>
+        <li>Design a co-sell motion with hyperscaler cloud providers</li>
+        <li>Build and manage a reseller/VAR channel</li>
+        <li>Measure partnership ROI and avoid common pitfalls</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Partnership Models</h2>
+
+      <h3>Technology Partnerships</h3>
+      <p>Build integrations that create mutual value. The integration is the product, not the partnership agreement.</p>
+      <ul>
+        <li><strong>Marketplace listings:</strong> AWS Marketplace, Azure Marketplace, GCP Marketplace — customers can purchase through their existing cloud commitments</li>
+        <li><strong>Native integrations:</strong> Deep product integrations (Slack + Salesforce, Datadog + AWS)</li>
+        <li><strong>API partnerships:</strong> Embed partner capabilities within your product</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Cloud Marketplace insight:</strong> Customers can apply committed cloud spend to marketplace purchases. A $100K software deal that burns down AWS EDP commitment is much easier to approve than a net-new budget line item. This is increasingly driving enterprise software purchasing.
+      </div>
+
+      <h3>Reseller / VAR Channel</h3>
+      <p>Partners sell your product to their customers, typically with a margin of 15–30%:</p>
+      <table>
+        <thead>
+          <tr><th>Partner Type</th><th>Typical Margin</th><th>Value They Add</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Value-Added Reseller (VAR)</td><td>15–25%</td><td>Local relationships, implementation, support</td></tr>
+          <tr><td>Managed Service Provider (MSP)</td><td>20–35%</td><td>Ongoing management, bundled services</td></tr>
+          <tr><td>System Integrator (SI)</td><td>Services revenue</td><td>Complex implementations, enterprise access</td></tr>
+          <tr><td>Distributor</td><td>5–15%</td><td>Channel aggregation, logistics, credit</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Referral Partnerships</h3>
+      <p>Lightest-touch model. Partners refer leads in exchange for fees (typically 10–20% of first-year revenue) or reciprocal referrals. Low investment, low control.</p>
+
+      <h3>OEM / Embedded Partnerships</h3>
+      <p>Partner embeds your technology within their product. Your brand may be invisible to the end customer. High volume, lower margin per unit, long sales cycles to establish.</p>
+    </section>
+
+    <section>
+      <h2>Co-Sell with Hyperscalers</h2>
+      <p>AWS, Azure, and GCP all have co-sell programs that can dramatically accelerate enterprise deals. But getting real co-sell engagement requires strategy.</p>
+
+      <h3>How Co-Sell Works</h3>
+      <ol>
+        <li><strong>Register the opportunity:</strong> Submit the deal in the partner portal (ACE for AWS, Partner Center for Azure)</li>
+        <li><strong>Get matched:</strong> Cloud provider's account team validates the opportunity</li>
+        <li><strong>Joint engagement:</strong> Cloud seller introduces you to the customer or supports your pitch</li>
+        <li><strong>Transaction:</strong> Deal closes through marketplace (cloud provider gets committed spend burn-down)</li>
+      </ol>
+
+      <h3>What Hyperscalers Care About</h3>
+      <ul>
+        <li><strong>Cloud consumption:</strong> Does your product drive more cloud usage? This is the #1 factor.</li>
+        <li><strong>Customer retention:</strong> Does your product make customers stickier on the platform?</li>
+        <li><strong>Deal size:</strong> Cloud sellers focus on large accounts. Small deals won't get attention.</li>
+        <li><strong>Win rate:</strong> If you register deals that don't close, you'll lose co-sell priority.</li>
+      </ul>
+
+      <h3>Co-Sell Tiers</h3>
+      <table>
+        <thead>
+          <tr><th>Tier</th><th>Requirements</th><th>Benefits</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Listed</td><td>Marketplace listing, basic integration</td><td>Visibility, self-serve transactions</td></tr>
+          <tr><td>Co-sell ready</td><td>Validated integration, trained sales team</td><td>Deal registration, some seller engagement</td></tr>
+          <tr><td>Co-sell prioritized</td><td>Proven consumption impact, reference customers</td><td>Active seller introductions, joint marketing</td></tr>
+          <tr><td>Strategic</td><td>Major consumption driver, executive alignment</td><td>Dedicated partner manager, co-investment</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Reality check:</strong> Most ISVs overestimate co-sell support they'll receive. Cloud sellers manage hundreds of partners and focus on the 5–10 that move the needle on their quota. To earn co-sell attention, you need to prove cloud consumption impact with data, not promises.
+      </div>
+    </section>
+
+    <section>
+      <h2>Building a Channel Program</h2>
+
+      <h3>Program Design</h3>
+      <ol>
+        <li><strong>Define partner tiers:</strong> Registered → Silver → Gold → Platinum based on certification, revenue, and customer satisfaction</li>
+        <li><strong>Set economics:</strong> Clear margin structure, deal registration protection (first to register gets the margin), MDF (market development funds)</li>
+        <li><strong>Build enablement:</strong> Partner portal, sales training, technical certification, demo environments</li>
+        <li><strong>Provide support:</strong> Dedicated partner managers for top-tier partners, shared support for lower tiers</li>
+        <li><strong>Measure and iterate:</strong> Partner sourced vs. partner influenced revenue, partner satisfaction, deal registration accuracy</li>
+      </ol>
+
+      <h3>Channel Conflict Management</h3>
+      <p>When you sell both direct and through partners, conflict is inevitable. Clear rules prevent the worst outcomes:</p>
+      <ul>
+        <li><strong>Deal registration:</strong> First to register a qualified opportunity gets margin protection for a defined period (typically 90 days)</li>
+        <li><strong>Territory rules:</strong> Clear geographic or account-based boundaries between direct and channel</li>
+        <li><strong>Named accounts:</strong> Strategic accounts handled direct; mid-market and SMB through channel</li>
+        <li><strong>Escalation process:</strong> Defined process for disputed deals with a neutral arbiter</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Channel Economics</h2>
+
+      <h3>The Channel Math</h3>
+      <p>Channel sales trade margin for reach. The math must work for both sides:</p>
+      <ul>
+        <li><strong>Your perspective:</strong> 25% channel margin on a $100K deal = $75K to you. But if the partner sources the deal, your CAC on that $75K is near zero vs. $30K+ for a direct-sourced deal.</li>
+        <li><strong>Partner perspective:</strong> They need enough margin to cover their sales costs AND make a profit. If your margin is too thin, they'll sell a competitor's product.</li>
+      </ul>
+
+      <h3>Metrics to Track</h3>
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Definition</th><th>Target</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Partner-sourced revenue</td><td>Deals originated by partners</td><td>20–40% of total revenue (mature program)</td></tr>
+          <tr><td>Partner-influenced revenue</td><td>Deals where partners contributed</td><td>30–50% of total revenue</td></tr>
+          <tr><td>Partner attach rate</td><td>% of deals with partner involvement</td><td>Increasing QoQ</td></tr>
+          <tr><td>Partner activated rate</td><td>% of recruited partners who close a deal</td><td>&gt;30% in first year</td></tr>
+          <tr><td>Time to first deal</td><td>Days from partner sign-up to first close</td><td>&lt;180 days</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Common Pitfalls</h2>
+      <ul>
+        <li><strong>Recruiting too many partners:</strong> 10 engaged partners beat 100 inactive ones. Focus on quality.</li>
+        <li><strong>Underinvesting in enablement:</strong> Partners can't sell what they don't understand. Training and demo access are table stakes.</li>
+        <li><strong>Ignoring partner economics:</strong> If your partners can't make money, they'll stop selling your product.</li>
+        <li><strong>Channel as afterthought:</strong> Bolt-on channel programs fail. Channel strategy must be embedded in GTM design from the start.</li>
+        <li><strong>Expecting instant results:</strong> Channel programs take 12–18 months to generate meaningful pipeline. Budget accordingly.</li>
+      </ul>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're a $20M ARR security company. Should you prioritize AWS Marketplace co-sell or building a VAR channel? What factors drive this decision?</li>
+        <li>A reseller partner complains that your direct sales team is competing with them on the same accounts. How do you resolve this?</li>
+        <li>Explain why cloud marketplace transactions are increasingly preferred by enterprise buyers. What does this mean for your pricing strategy?</li>
+        <li>Design a partner tier program for a data analytics platform. What criteria define each tier and what benefits does each receive?</li>
+        <li>Your channel program has 50 partners but only 5 are actively selling. Diagnose the likely causes and propose fixes.</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-07.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-09.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

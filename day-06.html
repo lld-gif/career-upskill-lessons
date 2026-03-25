@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 06 — GTM Strategy | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 42.84%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 06</span>
+      <h1>GTM Strategy</h1>
+      <p class="subtitle">Go-to-market planning, ICP definition, and channel strategy.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Build an Ideal Customer Profile (ICP) from first principles</li>
+        <li>Choose between PLG, sales-led, and hybrid GTM motions</li>
+        <li>Design a channel strategy matched to your market</li>
+        <li>Understand the economics behind GTM decisions (CAC, LTV, payback)</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Ideal Customer Profile (ICP)</h2>
+      <p>Every GTM strategy begins with a clear ICP. Selling to the wrong customers is the fastest way to burn cash and demoralize a sales team.</p>
+
+      <h3>ICP Components</h3>
+      <table>
+        <thead>
+          <tr><th>Dimension</th><th>Questions to Answer</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Firmographics</td><td>Industry, size, revenue, geography</td><td>B2B SaaS, 200–2000 employees, $20M–$200M revenue, US/EU</td></tr>
+          <tr><td>Technographics</td><td>Tech stack, tools, maturity</td><td>Uses AWS, has a data team, runs Snowflake</td></tr>
+          <tr><td>Pain points</td><td>What problem are they desperate to solve?</td><td>Cloud costs growing faster than revenue</td></tr>
+          <tr><td>Buying signals</td><td>What triggers a purchase decision?</td><td>New CTO hire, board mandate to cut costs, funding round</td></tr>
+          <tr><td>Decision process</td><td>Who buys? Who influences? Who blocks?</td><td>VP Engineering decides, CFO approves, procurement negotiates</td></tr>
+        </tbody>
+      </table>
+
+      <h3>The Anti-ICP</h3>
+      <p>Equally important — define who you should <em>not</em> sell to:</p>
+      <ul>
+        <li>Companies too small to afford your product (high churn risk)</li>
+        <li>Industries with regulatory requirements you can't meet</li>
+        <li>Orgs without the technical maturity to implement your solution</li>
+        <li>Prospects where your product solves a nice-to-have, not a must-have</li>
+      </ul>
+
+      <div class="callout">
+        <strong>ICP discipline:</strong> The best early-stage companies say no to 70%+ of inbound interest. Every bad-fit customer consumes support resources, creates feature requests that distort the roadmap, and churns — destroying LTV.
+      </div>
+    </section>
+
+    <section>
+      <h2>GTM Motions</h2>
+
+      <h3>Product-Led Growth (PLG)</h3>
+      <p>The product is the primary acquisition, conversion, and expansion vehicle.</p>
+      <ul>
+        <li><strong>Model:</strong> Free tier or trial → self-serve conversion → team expansion</li>
+        <li><strong>Fits when:</strong> Low ACV ($0–$10K), individual user can get value alone, viral/network effects</li>
+        <li><strong>Examples:</strong> Slack, Figma, Notion, Datadog</li>
+        <li><strong>Key metrics:</strong> Sign-up to activation rate, time-to-value, expansion revenue, NRR</li>
+      </ul>
+
+      <h3>Sales-Led Growth (SLG)</h3>
+      <p>Sales team drives acquisition through outbound and inbound pipeline.</p>
+      <ul>
+        <li><strong>Model:</strong> SDR/BDR prospecting → AE demos → pilot/POC → contract</li>
+        <li><strong>Fits when:</strong> High ACV ($50K+), complex buying committee, requires customization</li>
+        <li><strong>Examples:</strong> Snowflake, Palantir, ServiceNow</li>
+        <li><strong>Key metrics:</strong> Pipeline coverage, win rate, ACV, sales cycle length, CAC</li>
+      </ul>
+
+      <h3>Hybrid / Product-Led Sales</h3>
+      <p>PLG creates the bottom of funnel; sales converts and expands the best accounts.</p>
+      <ul>
+        <li><strong>Model:</strong> Free/trial sign-up → product usage signals → sales outreach to high-PQL accounts</li>
+        <li><strong>Fits when:</strong> Mid-range ACV ($10K–$100K), land-and-expand opportunity</li>
+        <li><strong>Examples:</strong> Atlassian, MongoDB, Twilio</li>
+        <li><strong>Key metrics:</strong> PQL-to-SQL conversion rate, expansion ARR, usage-to-contract correlation</li>
+      </ul>
+
+      <h3>GTM Motion Selection Framework</h3>
+      <table>
+        <thead>
+          <tr><th>Signal</th><th>PLG</th><th>Sales-Led</th><th>Hybrid</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ACV</td><td>&lt;$10K</td><td>&gt;$50K</td><td>$10K–$100K</td></tr>
+          <tr><td>Buyer</td><td>End user</td><td>Executive/committee</td><td>User → executive</td></tr>
+          <tr><td>Complexity</td><td>Self-serve</td><td>Requires guidance</td><td>Self-serve start, guided expansion</td></tr>
+          <tr><td>Time to value</td><td>Minutes to hours</td><td>Weeks to months</td><td>Hours to days</td></tr>
+          <tr><td>Market size</td><td>Very large TAM</td><td>Concentrated TAM</td><td>Large TAM, segmented</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>GTM Economics</h2>
+
+      <h3>The Unit Economics Triangle</h3>
+      <p>Three numbers govern GTM sustainability:</p>
+      <ul>
+        <li><span class="key-term">CAC</span> (Customer Acquisition Cost): Total S&M spend ÷ new customers acquired</li>
+        <li><span class="key-term">LTV</span> (Lifetime Value): Average revenue per customer × gross margin × average lifespan</li>
+        <li><span class="key-term">Payback Period</span>: CAC ÷ (Annual revenue per customer × gross margin)</li>
+      </ul>
+
+      <h3>Benchmark Ratios</h3>
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Healthy</th><th>Good</th><th>Great</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>LTV:CAC</td><td>3:1</td><td>4:1</td><td>5:1+</td></tr>
+          <tr><td>CAC Payback</td><td>&lt;24 months</td><td>&lt;18 months</td><td>&lt;12 months</td></tr>
+          <tr><td>Net Revenue Retention</td><td>&gt;100%</td><td>&gt;110%</td><td>&gt;130%</td></tr>
+          <tr><td>S&M as % of Revenue</td><td>&lt;50%</td><td>&lt;40%</td><td>&lt;30%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>The magic of NRR:</strong> Net Revenue Retention above 100% means your existing customers are growing faster than they're churning. At 130% NRR, you could stop all new sales and still grow 30% from the installed base. This is the most powerful GTM metric and the one investors scrutinize most.
+      </div>
+    </section>
+
+    <section>
+      <h2>Channel Strategy</h2>
+
+      <h3>Direct Channels</h3>
+      <ul>
+        <li><strong>Outbound sales:</strong> SDR/AE team targets ICP accounts directly. Highest control, highest cost.</li>
+        <li><strong>Inbound marketing:</strong> Content, SEO, paid ads drive leads. Lower cost per lead but requires time to build.</li>
+        <li><strong>Self-serve / PLG:</strong> Product drives acquisition. Lowest CAC but requires product investment.</li>
+      </ul>
+
+      <h3>Indirect Channels</h3>
+      <ul>
+        <li><strong>Technology partnerships:</strong> Integrations and marketplace listings (AWS Marketplace, Salesforce AppExchange)</li>
+        <li><strong>Resellers / VARs:</strong> Channel partners sell on your behalf (important in government and enterprise)</li>
+        <li><strong>System integrators:</strong> SIs implement your product as part of larger engagements (Accenture, Deloitte)</li>
+        <li><strong>Referral programs:</strong> Customers and partners refer new business for fees or credits</li>
+      </ul>
+
+      <h3>Channel Economics</h3>
+      <p>Every channel has different unit economics. The right mix depends on ACV, market maturity, and competitive dynamics:</p>
+      <table>
+        <thead>
+          <tr><th>Channel</th><th>Typical CAC</th><th>Time to Revenue</th><th>Scalability</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>PLG / Self-serve</td><td>Lowest</td><td>Fastest</td><td>Highest</td></tr>
+          <tr><td>Inbound marketing</td><td>Low–Medium</td><td>3–6 months</td><td>High</td></tr>
+          <tr><td>Outbound sales</td><td>High</td><td>3–12 months</td><td>Medium</td></tr>
+          <tr><td>Channel partners</td><td>Medium (margin share)</td><td>6–18 months to build</td><td>High once established</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're launching a cloud cost optimization tool for mid-market companies ($20M–$200M revenue). Define the ICP and recommend a GTM motion.</li>
+        <li>A company has 25% CAC payback in 8 months but NRR of 95%. What does this tell you? What would you change?</li>
+        <li>Explain why a company with $5K ACV shouldn't hire an enterprise sales team. What's the alternative?</li>
+        <li>Design a land-and-expand strategy for a data analytics platform. What's the "land" (first use case) and what drives the "expand"?</li>
+        <li>When should a startup invest in channel partnerships vs. direct sales? What are the trade-offs?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-05.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-07.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

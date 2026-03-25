@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 09 — Defense Tech Landscape | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 64.26%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 09</span>
+      <h1>Defense Tech Landscape</h1>
+      <p class="subtitle">Defense primes, new entrants, procurement cycles, and ITAR/EAR basics.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Map the defense industrial base from primes to startups</li>
+        <li>Understand DoD procurement processes and budget cycles</li>
+        <li>Navigate ITAR, EAR, and export control fundamentals</li>
+        <li>Identify where technology companies can enter the defense market</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>The Defense Industrial Base</h2>
+
+      <h3>The Primes</h3>
+      <p>Five companies dominate US defense contracting. Understanding their structure and incentives is essential:</p>
+      <table>
+        <thead>
+          <tr><th>Prime</th><th>Core Focus</th><th>FY2024 Revenue (approx)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lockheed Martin</td><td>Aeronautics, missiles, space, rotary</td><td>~$68B</td></tr>
+          <tr><td>RTX (Raytheon)</td><td>Missiles, sensors, avionics, engines</td><td>~$69B</td></tr>
+          <tr><td>Northrop Grumman</td><td>Space, cyber, autonomous, bombers</td><td>~$39B</td></tr>
+          <tr><td>Boeing Defense</td><td>Aircraft, satellites, weapons</td><td>~$25B</td></tr>
+          <tr><td>General Dynamics</td><td>IT services, submarines, ground vehicles</td><td>~$42B</td></tr>
+        </tbody>
+      </table>
+
+      <h3>The New Entrants (Neoscalers)</h3>
+      <p>A wave of venture-backed defense technology companies has emerged, challenging primes with software-defined approaches:</p>
+      <ul>
+        <li><strong>Anduril:</strong> Autonomous systems, sensor fusion, Lattice OS platform</li>
+        <li><strong>Palantir:</strong> Data integration and AI/ML for defense and intelligence</li>
+        <li><strong>Shield AI:</strong> Autonomous aircraft, Hivemind AI pilot</li>
+        <li><strong>Rebellion Defense:</strong> AI/ML for mission planning and simulation</li>
+        <li><strong>Hadrian:</strong> Automated manufacturing for defense hardware</li>
+      </ul>
+
+      <div class="callout">
+        <strong>The thesis:</strong> Defense primes are optimized for cost-plus contracts and hardware programs. New entrants are bringing Silicon Valley speed, software-first architectures, and commercial best practices to defense — and increasingly winning programs.
+      </div>
+
+      <h3>Mid-Tier Defense</h3>
+      <p>Companies between $1B–$15B in defense revenue that often specialize:</p>
+      <ul>
+        <li><strong>L3Harris:</strong> Communications, ISR, space</li>
+        <li><strong>Leidos:</strong> IT services, digital modernization, health</li>
+        <li><strong>SAIC:</strong> IT services, engineering, mission support</li>
+        <li><strong>BAE Systems (US):</strong> Electronic systems, platforms, cyber</li>
+        <li><strong>Booz Allen Hamilton:</strong> Consulting, analytics, cyber, AI</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>DoD Procurement</h2>
+
+      <h3>The Budget Cycle</h3>
+      <p>Understanding the <span class="key-term">Planning, Programming, Budgeting, and Execution (PPBE)</span> cycle is critical for timing your sales efforts:</p>
+      <ol>
+        <li><strong>Planning (2–3 years out):</strong> DoD sets strategic priorities and capability gaps</li>
+        <li><strong>Programming (1–2 years out):</strong> Services allocate resources to programs</li>
+        <li><strong>Budgeting (current + 1 year):</strong> OMB reviews, President submits budget to Congress</li>
+        <li><strong>Execution (current year):</strong> Funds are obligated and spent. Use-it-or-lose-it pressure in Q4 (July–September)</li>
+      </ol>
+
+      <h3>Contract Types</h3>
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Description</th><th>Risk Profile</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Firm Fixed Price (FFP)</td><td>Set price regardless of actual costs</td><td>Contractor bears cost risk</td></tr>
+          <tr><td>Cost-Plus Fixed Fee (CPFF)</td><td>Reimbursed costs + guaranteed fee</td><td>Government bears cost risk</td></tr>
+          <tr><td>Time & Materials (T&M)</td><td>Hourly rates + materials at cost</td><td>Shared risk</td></tr>
+          <tr><td>IDIQ</td><td>Indefinite delivery, indefinite quantity — ceiling amount with task orders</td><td>Variable by task order</td></tr>
+          <tr><td>OTA</td><td>Other Transaction Authority — flexible, not bound by FAR</td><td>Negotiated per agreement</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Acquisition Pathways for Tech Companies</h3>
+      <ul>
+        <li><strong>SBIR/STTR:</strong> Small Business Innovation Research — grants for R&D. Phase I (~$150K), Phase II (~$1M), Phase III (production contract, unlimited).</li>
+        <li><strong>OTA (Other Transaction Authority):</strong> Faster, more flexible than FAR-based contracts. Used by DIU, AFWERX, NavalX. Ideal for commercial tech companies.</li>
+        <li><strong>DIU (Defense Innovation Unit):</strong> Silicon Valley-based DoD org that connects commercial tech to military needs. Prototypes in 12–24 months.</li>
+        <li><strong>AFWERX / NavalX / Army Futures:</strong> Service-specific innovation organizations with streamlined procurement.</li>
+        <li><strong>GSA Schedule:</strong> Pre-negotiated contract vehicle — once on schedule, any federal agency can buy from you.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>The OTA advantage:</strong> Other Transaction Authorities bypass most FAR (Federal Acquisition Regulation) requirements, meaning no cost accounting system requirements, faster award timelines (months vs. years), and commercial-friendly terms. This is the primary entry point for tech companies entering defense.
+      </div>
+    </section>
+
+    <section>
+      <h2>Export Controls: ITAR & EAR</h2>
+
+      <h3>ITAR (International Traffic in Arms Regulations)</h3>
+      <p>Governs defense articles and services on the <span class="key-term">United States Munitions List (USML)</span>:</p>
+      <ul>
+        <li>Controlled by the State Department (DDTC)</li>
+        <li>Covers military-specific items: weapons, military aircraft, satellites, crypto for military use</li>
+        <li>Export (including sharing with foreign nationals in the US) requires a license</li>
+        <li>Violations carry severe penalties — criminal prosecution, massive fines, debarment</li>
+        <li>US persons only can access ITAR data — this drives hiring and facility requirements</li>
+      </ul>
+
+      <h3>EAR (Export Administration Regulations)</h3>
+      <p>Governs dual-use items on the <span class="key-term">Commerce Control List (CCL)</span>:</p>
+      <ul>
+        <li>Controlled by the Commerce Department (BIS)</li>
+        <li>Covers commercial items with military applications: semiconductors, encryption, certain software</li>
+        <li>Less restrictive than ITAR but still requires compliance</li>
+        <li>Export to certain countries/entities is restricted or prohibited</li>
+      </ul>
+
+      <h3>Practical Implications</h3>
+      <ul>
+        <li><strong>Hiring:</strong> ITAR-controlled programs require US Person employees (citizens and permanent residents)</li>
+        <li><strong>Cloud infrastructure:</strong> ITAR data must be stored in US-only, access-controlled environments (GovCloud, IL4/IL5)</li>
+        <li><strong>Product development:</strong> If your product incorporates ITAR data, the entire product may become ITAR-controlled</li>
+        <li><strong>Open source:</strong> Generally exempt from export controls under the "publicly available" exclusion, but be careful with military-specific implementations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Impact Levels & Cloud in DoD</h2>
+      <table>
+        <thead>
+          <tr><th>Impact Level</th><th>Data Type</th><th>Cloud Options</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>IL2</td><td>Public, non-sensitive DoD</td><td>Commercial cloud (AWS, Azure, GCP)</td></tr>
+          <tr><td>IL4</td><td>CUI (Controlled Unclassified Info)</td><td>AWS GovCloud, Azure Gov, GCP Assured</td></tr>
+          <tr><td>IL5</td><td>CUI + National Security</td><td>AWS GovCloud, Azure Gov (dedicated)</td></tr>
+          <tr><td>IL6</td><td>Secret classified</td><td>AWS Secret Region, Azure Gov Secret</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>You're a SaaS company with an AI product relevant to defense. What's your fastest path to a DoD contract? What barriers will you face?</li>
+        <li>Explain why OTAs are transformative for tech companies entering defense. What are their limitations?</li>
+        <li>A startup wants to hire engineers in London for a project involving ITAR-controlled data. What's the problem and how do you solve it?</li>
+        <li>Compare the business models of a defense prime (cost-plus) vs. a defense tech startup (commercial-first). How does this affect product development speed?</li>
+        <li>The DoD fiscal year ends September 30. How should this affect your sales strategy if you're selling to the Army?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-08.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-10.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

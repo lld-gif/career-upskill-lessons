@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 02 — Gross Profit Improvement | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 14.28%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 02</span>
+      <h1>Gross Profit Improvement</h1>
+      <p class="subtitle">Levers for improving gross margins in cloud and SaaS businesses.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Define gross profit and gross margin in the context of cloud/SaaS</li>
+        <li>Identify the primary levers for improving gross margins</li>
+        <li>Understand COGS composition for software businesses</li>
+        <li>Build a framework for margin improvement initiatives</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Gross Profit Fundamentals</h2>
+      <p><span class="key-term">Gross Profit</span> = Revenue − Cost of Goods Sold (COGS). <span class="key-term">Gross Margin</span> = Gross Profit ÷ Revenue. For SaaS companies, gross margin is one of the most scrutinized metrics by investors because it reveals the inherent scalability of the business.</p>
+
+      <h3>SaaS COGS Components</h3>
+      <p>Unlike physical goods, software COGS is dominated by infrastructure and people costs:</p>
+      <table>
+        <thead>
+          <tr><th>COGS Component</th><th>Typical % of Revenue</th><th>Controllability</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cloud hosting / infrastructure</td><td>8–15%</td><td>High</td></tr>
+          <tr><td>Customer support / success</td><td>5–10%</td><td>Medium</td></tr>
+          <tr><td>Third-party software licenses</td><td>2–5%</td><td>Medium</td></tr>
+          <tr><td>DevOps / site reliability</td><td>3–6%</td><td>Medium</td></tr>
+          <tr><td>Payment processing fees</td><td>2–3%</td><td>Low</td></tr>
+          <tr><td>Data costs (APIs, feeds)</td><td>1–5%</td><td>Variable</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Benchmark Gross Margins</h3>
+      <table>
+        <thead>
+          <tr><th>Business Type</th><th>Typical GM</th><th>Best-in-Class</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pure SaaS</td><td>70–80%</td><td>85%+</td></tr>
+          <tr><td>Infrastructure/PaaS</td><td>50–65%</td><td>70%+</td></tr>
+          <tr><td>Managed Services</td><td>40–55%</td><td>60%+</td></tr>
+          <tr><td>Hardware + Software</td><td>30–50%</td><td>55%+</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>The Seven Gross Margin Levers</h2>
+
+      <h3>1. Infrastructure Optimization</h3>
+      <p>The single largest controllable COGS item. Tactics include:</p>
+      <ul>
+        <li>Right-sizing instances (most workloads are over-provisioned by 30–50%)</li>
+        <li>Reserved instance / Savings Plan coverage for steady-state workloads</li>
+        <li>Spot/preemptible instances for fault-tolerant batch workloads</li>
+        <li>Auto-scaling policies tuned to actual demand patterns</li>
+        <li>Storage tiering — move cold data to cheaper storage classes</li>
+      </ul>
+
+      <h3>2. Architecture Efficiency</h3>
+      <p>Application architecture directly impacts cloud costs:</p>
+      <ul>
+        <li>Multi-tenancy vs. single-tenant — shared infrastructure amortizes costs across customers</li>
+        <li>Serverless for bursty workloads — pay only for execution time</li>
+        <li>Caching layers to reduce expensive database/API calls</li>
+        <li>CDN for static content to reduce origin compute and egress</li>
+      </ul>
+
+      <h3>3. Support Efficiency</h3>
+      <p>Support costs scale linearly with customers unless you invest in:</p>
+      <ul>
+        <li>Self-service documentation and knowledge bases</li>
+        <li>In-app guidance and onboarding flows</li>
+        <li>Tiered support models (free → premium → dedicated)</li>
+        <li>AI-assisted support for common queries</li>
+      </ul>
+
+      <h3>4. Vendor Negotiation</h3>
+      <p>As you scale, negotiate better terms on third-party costs:</p>
+      <ul>
+        <li>Volume discounts on cloud providers (EDP/committed spend agreements)</li>
+        <li>Payment processing rate negotiation (at scale, every basis point matters)</li>
+        <li>Alternative vendors for commodity services</li>
+      </ul>
+
+      <h3>5. Pricing Architecture</h3>
+      <p>Pricing directly impacts gross margin when your pricing metric doesn't align with your cost metric:</p>
+      <ul>
+        <li>Per-seat pricing with high compute usage = margin compression at scale</li>
+        <li>Usage-based pricing aligned with infrastructure costs = stable margins</li>
+        <li>Tiered pricing with higher margins on premium tiers</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Key insight:</strong> The best SaaS companies design pricing so that customer value scales faster than their COGS. If a customer pays 2x more, it should cost you less than 2x to serve them.
+      </div>
+
+      <h3>6. Revenue Mix Shift</h3>
+      <p>Not all revenue carries the same margin. Shifting mix toward higher-margin products improves blended gross margin:</p>
+      <ul>
+        <li>Platform fees (high margin) vs. professional services (low margin)</li>
+        <li>Software licenses vs. managed services</li>
+        <li>Premium add-ons with minimal incremental COGS</li>
+      </ul>
+
+      <h3>7. Operational Discipline</h3>
+      <p>Ongoing practices that prevent margin erosion:</p>
+      <ul>
+        <li>Monthly cloud cost reviews with engineering leadership</li>
+        <li>Cost allocation tags on all cloud resources</li>
+        <li>Unit economics dashboards (cost per customer, cost per transaction)</li>
+        <li>Engineering KPIs that include efficiency metrics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Building a Margin Improvement Plan</h2>
+      <p>A structured approach to improving gross margins:</p>
+      <ol>
+        <li><strong>Baseline:</strong> Document current COGS by category and current gross margin</li>
+        <li><strong>Benchmark:</strong> Compare against industry peers and best-in-class</li>
+        <li><strong>Identify:</strong> Rank improvement opportunities by effort vs. impact</li>
+        <li><strong>Prioritize:</strong> Quick wins first (right-sizing, reservations), then structural changes (architecture, pricing)</li>
+        <li><strong>Track:</strong> Monthly gross margin reporting with COGS breakdown</li>
+        <li><strong>Iterate:</strong> Revisit quarterly as the business scales and cost structure shifts</li>
+      </ol>
+
+      <div class="callout">
+        <strong>Typical timeline:</strong> Quick wins (right-sizing, reservations) deliver 3–5 points of margin improvement in 1–2 months. Structural changes (architecture, pricing) deliver 5–10 points over 6–12 months.
+      </div>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>A SaaS company has 68% gross margins. Their COGS is 40% hosting, 30% support, 15% third-party licenses, 15% other. Which lever would you pull first and why?</li>
+        <li>Explain why per-seat pricing can compress margins as customers scale. What pricing model would better preserve margins?</li>
+        <li>A company shifts from single-tenant to multi-tenant architecture. What gross margin improvement would you expect and over what timeline?</li>
+        <li>Why do investors care more about gross margin trends than absolute levels?</li>
+        <li>Your cloud bill grew 50% YoY but revenue grew 80% YoY. Is this a problem? How would you analyze it?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-01.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-03.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>

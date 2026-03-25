@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 05 — Deal Structuring | 14-Day Career Upskill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0c0c0c; color: #e0e0e0; font-family: 'Space Grotesk', sans-serif; line-height: 1.7; min-height: 100vh; }
+    .container { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .day-badge { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; color: #0c0c0c; background: #c9ff3b; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1rem; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
+    .subtitle { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #888; }
+    .progress-bar { width: 100%; height: 4px; background: #2a2a2a; border-radius: 2px; margin: 1.5rem 0; }
+    .progress-fill { height: 100%; background: #c9ff3b; border-radius: 2px; width: 35.7%; }
+    .objectives { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin-bottom: 2.5rem; }
+    .objectives h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .objectives ul { list-style: none; }
+    .objectives li { padding: 0.3rem 0; padding-left: 1.2rem; position: relative; font-size: 0.95rem; }
+    .objectives li::before { content: '→'; position: absolute; left: 0; color: #c9ff3b; }
+    section { margin-bottom: 2.5rem; }
+    section h2 { font-size: 1.4rem; font-weight: 600; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid #2a2a2a; padding-bottom: 0.5rem; }
+    section h3 { font-size: 1.1rem; font-weight: 600; color: #c9ff3b; margin: 1.5rem 0 0.75rem; }
+    p { margin-bottom: 1rem; font-size: 0.95rem; }
+    ul, ol { margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .key-term { color: #c9ff3b; font-weight: 600; }
+    .callout { background: #161616; border-left: 3px solid #c9ff3b; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+    .self-check { background: #161616; border: 1px solid #2a2a2a; border-radius: 10px; padding: 1.5rem; margin: 2.5rem 0; }
+    .self-check h2 { font-size: 0.85rem; font-family: 'Space Mono', monospace; color: #c9ff3b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+    .self-check ol { margin-left: 1.2rem; }
+    .self-check li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    nav.lesson-nav { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #2a2a2a; margin-top: 3rem; }
+    nav.lesson-nav a { font-family: 'Space Mono', monospace; font-size: 0.85rem; color: #c9ff3b; text-decoration: none; transition: opacity 0.2s; }
+    nav.lesson-nav a:hover { opacity: 0.8; }
+    .back-link { display: inline-block; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: #888; text-decoration: none; margin-bottom: 1.5rem; transition: color 0.2s; }
+    .back-link:hover { color: #c9ff3b; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid #2a2a2a; }
+    th { color: #c9ff3b; font-family: 'Space Mono', monospace; font-size: 0.8rem; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Index</a>
+    <header>
+      <span class="day-badge">DAY 05</span>
+      <h1>Deal Structuring</h1>
+      <p class="subtitle">Term sheets, valuation mechanics, earnouts, and deal architecture.</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </header>
+
+    <div class="objectives">
+      <h2>Learning Objectives</h2>
+      <ul>
+        <li>Understand the key components of a term sheet</li>
+        <li>Compare valuation methodologies for tech acquisitions</li>
+        <li>Design earnout structures that align incentives</li>
+        <li>Evaluate trade-offs between cash, stock, and hybrid consideration</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Valuation Methodologies</h2>
+      <p>There is no single "right" valuation. Every methodology has assumptions, and sophisticated buyers use multiple approaches to triangulate.</p>
+
+      <h3>Revenue Multiples</h3>
+      <p>The dominant method for high-growth SaaS companies. Expressed as <span class="key-term">Enterprise Value / ARR</span> or EV/Revenue.</p>
+      <table>
+        <thead>
+          <tr><th>Growth Rate</th><th>Typical Multiple (2024–2025)</th><th>Context</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>&lt;20% YoY</td><td>3–6x ARR</td><td>Mature, profitable SaaS</td></tr>
+          <tr><td>20–40% YoY</td><td>6–12x ARR</td><td>Growth-stage SaaS</td></tr>
+          <tr><td>40–80% YoY</td><td>12–20x ARR</td><td>High-growth with strong retention</td></tr>
+          <tr><td>&gt;80% YoY</td><td>20–40x+ ARR</td><td>Category leaders, AI/hot sectors</td></tr>
+        </tbody>
+      </table>
+
+      <h3>EBITDA Multiples</h3>
+      <p>Preferred for profitable or near-profitable companies, and the standard for PE deals:</p>
+      <ul>
+        <li>Small SaaS ($5–20M revenue): 8–15x EBITDA</li>
+        <li>Mid-market ($20–100M revenue): 15–25x EBITDA</li>
+        <li>Enterprise ($100M+): 20–35x EBITDA</li>
+      </ul>
+
+      <h3>Discounted Cash Flow (DCF)</h3>
+      <p>Project future free cash flows and discount them to present value. Theoretically the most rigorous but highly sensitive to assumptions:</p>
+      <ul>
+        <li>Revenue growth rate projections (usually 5-year model)</li>
+        <li>Margin expansion assumptions</li>
+        <li>Terminal value (often 60–80% of total DCF value — the tail wags the dog)</li>
+        <li>Discount rate (WACC) — typically 10–15% for tech companies</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Reality check:</strong> In tech M&A, revenue multiples dominate early-stage deals. DCF and EBITDA multiples become more important as companies mature. Buyers run all three but negotiate based on the methodology that supports their preferred price.
+      </div>
+    </section>
+
+    <section>
+      <h2>Consideration Types</h2>
+      <p>How the buyer pays is as important as how much they pay.</p>
+
+      <h3>All Cash</h3>
+      <ul>
+        <li><strong>Seller preference:</strong> Certainty of value, immediate liquidity</li>
+        <li><strong>Buyer implications:</strong> Requires cash on hand or debt financing; dilution-neutral</li>
+        <li><strong>When used:</strong> PE acquisitions, acqui-hires, smaller deals</li>
+      </ul>
+
+      <h3>All Stock</h3>
+      <ul>
+        <li><strong>Seller implication:</strong> Takes on buyer's equity risk; value fluctuates until lockup expires</li>
+        <li><strong>Buyer advantage:</strong> Preserves cash, aligns seller with post-acquisition performance</li>
+        <li><strong>When used:</strong> Large strategic mergers, high-confidence synergy deals</li>
+        <li><strong>Key risk:</strong> Buyer's stock price drops between signing and closing</li>
+      </ul>
+
+      <h3>Cash + Stock Mix</h3>
+      <p>Most common structure for mid-to-large deals. Typical splits: 60/40 or 70/30 cash/stock. Balances certainty for the seller with alignment for the buyer.</p>
+
+      <h3>Cash + Earnout</h3>
+      <p>Bridges valuation gaps by making a portion of the price contingent on future performance.</p>
+    </section>
+
+    <section>
+      <h2>Earnout Structures</h2>
+      <p>An <span class="key-term">earnout</span> is contingent consideration — additional payment to the seller if specified targets are met post-close.</p>
+
+      <h3>When Earnouts Make Sense</h3>
+      <ul>
+        <li>Buyer and seller disagree on valuation (earnout bridges the gap)</li>
+        <li>Business has strong growth trajectory but limited track record</li>
+        <li>Key employees need financial incentive to stay post-acquisition</li>
+        <li>High uncertainty about customer retention or market dynamics</li>
+      </ul>
+
+      <h3>Common Earnout Metrics</h3>
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Pros</th><th>Cons</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Revenue / ARR</td><td>Simple, hard to manipulate</td><td>Ignores profitability</td></tr>
+          <tr><td>EBITDA</td><td>Aligns with buyer value</td><td>Subject to accounting manipulation by buyer</td></tr>
+          <tr><td>Customer milestones</td><td>Clear, measurable</td><td>May not reflect business health</td></tr>
+          <tr><td>Product milestones</td><td>Good for acqui-hires / tech deals</td><td>Subjective completion criteria</td></tr>
+          <tr><td>Gross profit</td><td>Balances growth and efficiency</td><td>Moderate complexity</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Earnout Best Practices</h3>
+      <ul>
+        <li>Keep the period short (12–24 months; longer creates fatigue and disputes)</li>
+        <li>Use objective, auditable metrics — avoid subjective milestones</li>
+        <li>Define how the acquired business will be operated (standalone vs. integrated)</li>
+        <li>Include acceleration clauses (if buyer changes the business materially, earnout pays out)</li>
+        <li>Cap the earnout at a reasonable percentage (typically 20–40% of total deal value)</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Warning:</strong> Earnouts are the #1 source of post-acquisition disputes. The seller thinks the buyer sabotaged the earnout; the buyer thinks the seller gamed the metrics. Clear documentation and independent measurement reduce (but don't eliminate) conflict.
+      </div>
+    </section>
+
+    <section>
+      <h2>Protective Provisions</h2>
+
+      <h3>For Buyers</h3>
+      <ul>
+        <li><strong>Reps & warranties insurance:</strong> Shifts indemnification risk to an insurer (increasingly standard)</li>
+        <li><strong>Escrow holdback:</strong> 10–15% of purchase price held for 12–18 months for claims</li>
+        <li><strong>Material adverse change (MAC) clause:</strong> Allows buyer to walk if target's business deteriorates materially before closing</li>
+        <li><strong>Non-compete / non-solicit:</strong> Prevents seller's key people from competing or poaching employees</li>
+      </ul>
+
+      <h3>For Sellers</h3>
+      <ul>
+        <li><strong>Reverse breakup fee:</strong> Buyer pays if they fail to close (typically 3–6% of deal value)</li>
+        <li><strong>Specific performance:</strong> Court can force buyer to complete the deal</li>
+        <li><strong>Earnout protections:</strong> Buyer must operate the business in good faith to achieve earnout targets</li>
+        <li><strong>Accelerated vesting:</strong> Employee equity vests immediately on acquisition (single or double trigger)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Deal Structure Decision Framework</h2>
+      <table>
+        <thead>
+          <tr><th>Scenario</th><th>Recommended Structure</th><th>Rationale</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Acqui-hire (team focus)</td><td>Cash + retention packages</td><td>Minimize complexity, retain talent</td></tr>
+          <tr><td>Profitable small company</td><td>All cash, EBITDA-based</td><td>Certainty for seller, clean close</td></tr>
+          <tr><td>High-growth startup</td><td>Cash + earnout on ARR</td><td>Bridge valuation gap, prove trajectory</td></tr>
+          <tr><td>Large strategic merger</td><td>Cash + stock</td><td>Align long-term interests, preserve cash</td></tr>
+          <tr><td>PE platform deal</td><td>Leveraged cash + equity rollover</td><td>Seller retains upside, PE uses leverage</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="self-check">
+      <h2>Self-Check Questions</h2>
+      <ol>
+        <li>A buyer offers $50M: $35M cash at close + $15M earnout over 24 months based on EBITDA. As the seller's advisor, what concerns would you raise?</li>
+        <li>Why might a seller prefer a lower all-cash offer over a higher cash + stock offer?</li>
+        <li>Design an earnout structure for a cybersecurity startup being acquired by a large enterprise vendor. What metric, period, and protections would you recommend?</li>
+        <li>Explain "single trigger" vs. "double trigger" acceleration of employee equity in an acquisition. When does each matter?</li>
+        <li>A company has $10M ARR growing 60% YoY with -20% EBITDA margins. Which valuation methodology would the buyer prefer? The seller? Why?</li>
+      </ol>
+    </div>
+
+    <nav class="lesson-nav">
+      <a href="day-04.html">← Previous</a>
+      <a href="index.html">Index</a>
+      <a href="day-06.html">Next →</a>
+    </nav>
+  </div>
+</body>
+</html>
