@@ -212,14 +212,16 @@ th {
 
 /* ===== Lesson Navigation ===== */
 nav.lesson-nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-top: 2rem;
   border-top: 1px solid #2a2a2a;
   margin-top: 3rem;
+  gap: 1rem;
 }
-nav.lesson-nav a {
+nav.lesson-nav a,
+nav.lesson-nav span {
   font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
   color: #c9ff3b;
@@ -228,9 +230,10 @@ nav.lesson-nav a {
 }
 nav.lesson-nav a:hover { opacity: 0.8; }
 nav.lesson-nav .disabled { color: #555; pointer-events: none; }
+nav.lesson-nav .nav-prev { justify-self: start; }
+nav.lesson-nav .nav-next { justify-self: end; }
 
 /* ===== Mark Complete Button ===== */
-.mark-complete-wrapper { text-align: center; margin: 2rem 0 0.5rem; }
 .mark-complete-btn {
   font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
@@ -242,6 +245,7 @@ nav.lesson-nav .disabled { color: #555; pointer-events: none; }
   border-radius: 6px;
   cursor: pointer;
   transition: opacity 0.2s, transform 0.1s;
+  justify-self: center;
 }
 .mark-complete-btn:hover { opacity: 0.9; }
 .mark-complete-btn:active { transform: scale(0.98); }
